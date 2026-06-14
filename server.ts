@@ -294,9 +294,15 @@ If the input resource contains existing questions, convert them into high-fideli
 
 // Configure Vite middleware or static serving
 async function setupApp() {
-  // Connect to cloud database if available, and load initial cache
-  await connectMongo();
-  await loadDatabase();
+  // Sync load local database cache synchronously first so we have immediate data
+  try {
+    if (fs.existsSync(DB_FILE_PATH)) {
+      const content = fs.readFileSync(DB_FILE_PATH, 'utf-8');
+      dbCache = JSON.parse(content);
+    }
+  } catch (err) {
+    console.error('Error loading initial local fallback database:', err);
+  }
 
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
@@ -312,10 +318,22 @@ async function setupApp() {
     });
   }
 
-  // Bind to dynamic process.env.PORT to satisfy Render/Railway requirement
+  // Bind to dynamic process.env.PORT immediately to satisfy Cloud Run/Render health checks
   const port = process.env.PORT || PORT;
   app.listen(Number(port), '0.0.0.0', () => {
     console.log(`Abhiyantra Platform running on http://localhost:${port}`);
+    
+    // Connect to cloud MongoDB in the background without blocking server startup
+    if (MONGODB_URI) {
+      connectMongo()
+        .then(() => loadDatabase())
+        .then(() => {
+          console.log('MongoDB connection and sync completed in the background.');
+        })
+        .catch(err => {
+          console.error('Background MongoDB initialization failed:', err);
+        });
+    }
   });
 }
 
