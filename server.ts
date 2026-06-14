@@ -53,7 +53,7 @@ async function connectMongo() {
 async function loadDatabase() {
   if (isMongoConnected && mongoClient) {
     try {
-      const db = mongoClient.db();
+      const db = mongoClient.db('abhiyantra');
       const keys = Object.keys(dbCache);
       for (const key of keys) {
         const collection = db.collection(key);
@@ -84,7 +84,7 @@ async function loadDatabase() {
 async function saveDatabaseKey(key: string, data: any[]) {
   if (isMongoConnected && mongoClient) {
     try {
-      const db = mongoClient.db();
+      const db = mongoClient.db('abhiyantra');
       const collection = db.collection(key);
       
       // Clear existing records and bulk insert
@@ -154,7 +154,7 @@ app.post('/api/db/save', async (req, res) => {
 app.post('/api/db/reset', async (req, res) => {
   if (isMongoConnected && mongoClient) {
     try {
-      const db = mongoClient.db();
+      const db = mongoClient.db('abhiyantra');
       for (const key of Object.keys(dbCache)) {
         await db.collection(key).deleteMany({});
       }
