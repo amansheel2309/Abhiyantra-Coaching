@@ -316,15 +316,17 @@ export default function Header({ user, onChangeUser, currentTab, onChangeTab, on
               </span>
             </div>
             
-            {/* Quick Demo Shift */}
-            <button
-              type="button"
-              onClick={cycleSimulatorUser}
-              title="Test Suite Shift (Quick-Switch Roles)"
-              className="p-1 px-1.5 bg-indigo-50 border border-indigo-200/50 hover:bg-indigo-100 text-indigo-700 text-[9px] font-bold uppercase rounded-lg transition-all cursor-pointer"
-            >
-              Role Swift
-            </button>
+            {/* Quick Demo Shift - Only visible to admin users */}
+            {user.role === 'admin' && (
+              <button
+                type="button"
+                onClick={cycleSimulatorUser}
+                title="Test Suite Shift (Quick-Switch Roles)"
+                className="p-1 px-1.5 bg-indigo-50 border border-indigo-200/50 hover:bg-indigo-100 text-indigo-700 text-[9px] font-bold uppercase rounded-lg transition-all cursor-pointer"
+              >
+                Role Swift
+              </button>
+            )}
 
             {/* Standard Credentials Sign Out */}
             <button
