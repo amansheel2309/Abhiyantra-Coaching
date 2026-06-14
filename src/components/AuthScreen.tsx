@@ -223,7 +223,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <Key className="absolute left-3.5 top-3 h-4.5 w-4.5 text-slate-400" />
                 <input
                   type="password"
-                  placeholder="••••••••"
+                  placeholder="Enter your password"
                   value={loginPassword}
                   onChange={(e) => setLoginPassword(e.target.value)}
                   className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
@@ -239,16 +239,17 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
             </button>
           </form>
         ) : (
-          <form onSubmit={handleRegister} className="space-y-3">
+          <form onSubmit={handleRegister} className="space-y-3" autoComplete="off">
             <div className="space-y-1">
               <label className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Full Name</label>
               <div className="relative">
                 <User className="absolute left-3.5 top-3 h-4.5 w-4.5 text-slate-400" />
                 <input
                   type="text"
-                  placeholder="Aman Sheel"
+                  placeholder="Enter your full name"
                   value={regName}
                   onChange={(e) => setRegName(e.target.value)}
+                  autoComplete="off"
                   className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
@@ -259,9 +260,10 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <label className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Username</label>
                 <input
                   type="text"
-                  placeholder="aman"
+                  placeholder="Choose a username"
                   value={regUsername}
                   onChange={(e) => setRegUsername(e.target.value)}
+                  autoComplete="off"
                   className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
@@ -269,9 +271,10 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <label className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Password</label>
                 <input
                   type="password"
-                  placeholder="••••••••"
+                  placeholder="Create a password"
                   value={regPassword}
                   onChange={(e) => setRegPassword(e.target.value)}
+                  autoComplete="new-password"
                   className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
                 />
               </div>
@@ -283,9 +286,10 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <Mail className="absolute left-3.5 top-3 h-4.5 w-4.5 text-slate-400" />
                 <input
                   type="email"
-                  placeholder="student@gmail.com"
+                  placeholder="Enter your email address"
                   value={regEmail}
                   onChange={(e) => setRegEmail(e.target.value)}
+                  autoComplete="off"
                   className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
