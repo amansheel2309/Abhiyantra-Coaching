@@ -1,0 +1,1133 @@
+{
+  "users": [],
+  "quizzes": [
+    {
+      "id": "quiz-nlms",
+      "title": "Force, Inertia, and Laws of Motion (JEE Adv Standard)",
+      "description": "Advanced-level conceptual evaluation on Newton Laws of Motion, Friction, Friction coefficients, Impulse-momentum theorem, and constraint equations.",
+      "subject": "Physics",
+      "classLevel": 11,
+      "durationMinutes": 15,
+      "createdBy": "teacher-sharma@abhiyantra.com",
+      "createdAt": "2026-06-13T18:10:18.914Z",
+      "isCustom": false,
+      "questions": [
+        {
+          "id": "q-nlms-1",
+          "text": "A block of mass m is placed on a rough horizontal surface with friction coefficient μ. A force F is applied at an angle θ with the horizontal. What is the minimum force required to slide the block along the surface?",
+          "options": [
+            "F = μmg / (cos θ + μ sin θ)",
+            "F = μmg / (sin θ + μ cos θ)",
+            "F = μmg / cos(θ - tan⁻¹μ)",
+            "F = μmg / √(1 + μ²)"
+          ],
+          "correctAnswerIndex": 3,
+          "explanation": "To find the minimum force, we write the equation of equilibrium before slipping. The frictional force f = μ(mg - F sin θ). Sliding starts when f ≤ F cos θ, which yields F >= μmg / (cos θ + μ sin θ). To find the absolute minimum of this force, we maximize the denominator. The maximum value of (cos θ + μ sin θ) is √(1 + μ²) which happens when tan θ = μ. Therefore, the minimum force F_min = μmg / √(1 + μ²).",
+          "topic": "Laws of Motion and Friction",
+          "difficulty": "Hard"
+        },
+        {
+          "id": "q-nlms-2",
+          "text": "Two blocks of masses 2kg and 4kg are connected by a light string over a frictionless pulley. If the system is released from rest, what is the tension in the linking string? (Take g = 10 m/s²)",
+          "options": [
+            "T = 13.33 N",
+            "T = 26.67 N",
+            "T = 20.00 N",
+            "T = 40.00 N"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "In the Atwood machine system, Acceleration a = (m2 - m1)g / (m1 + m2) = (4 - 2)*10 / (4 + 2) = 20 / 6 = 3.33 m/s². The tension T is given by T = m1(g + a) = 2 * (10 + 3.33) = 26.67 N. Verified with formula T = 2 * m1 * m2 * g / (m1 + m2) = 2 * 2 * 4 * 10 / 6 = 160 / 6 = 26.67 N.",
+          "topic": "Atwood Machine and Constraints",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q-nlms-3",
+          "text": "A monkey of mass 15kg climbs a rope going over a smooth branch of a tree and linking to a bag of sand of mass 15kg placed on the ground. If the monkey climbs up the rope with acceleration 2 m/s² relative to the rope, the tension in the rope is:",
+          "options": [
+            "T = 150 N",
+            "T = 180 N",
+            "T = 165 N",
+            "T = 225 N"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Let T be the tension. For climbing monkey: T - mg = m*a_monkey. Since monkey is moving upward, monkey applies a heavy pull of T = m(g + a) = 15(10 + 2) = 180 N. Since tension exceeds the weight of the sandbag (15kg * g = 150 N), the sandbag will lift off the ground and move upwards, maintaining the rope tension of 180 N.",
+          "topic": "Laws of Motion and Friction",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "id": "quiz-chembond",
+      "title": "Chemical Bonding & Hybridization (NEET/JEE level)",
+      "description": "Challenging questions based on VSEPR theory, molecular orbital configuration, dipole moments, and hybrid state geometry.",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "durationMinutes": 10,
+      "createdBy": "teacher-sinha@abhiyantra.com",
+      "createdAt": "2026-06-13T18:10:18.914Z",
+      "isCustom": false,
+      "questions": [
+        {
+          "id": "q-chem-1",
+          "text": "Which of the following compounds has the highest dipole moment due to its structural configuration?",
+          "options": [
+            "NH3 (Ammonia)",
+            "NF3 (Nitrogen Trifluoride)",
+            "CO2 (Carbon Dioxide)",
+            "BF3 (Boron Trifluoride)"
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "CO2 and BF3 are symmetrical structures (linear and trigonal planar respectively), causing individual bond moments to cancel out giving zero net dipole. In NH3 and NF3, geometry is pyramidal. In NH3, the individual N-H orbital dipoles and lone-pair dipole act in the same direction, reinforcing each other. In NF3, highly electronegative F pulls electrons away from N, acting in the direction opposite to the lone pair dipole, which significantly reduces the net dipole moment.",
+          "topic": "Dipole Moment",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q-chem-2",
+          "text": "According to Molecular Orbital (MO) Theory, what is the bond order and magnetic nature of the superoxide ion (O₂⁻)?",
+          "options": [
+            "Bond Order = 2.0, Diamagnetic",
+            "Bond Order = 1.5, Paramagnetic",
+            "Bond Order = 1.0, Paramagnetic",
+            "Bond Order = 2.5, Diamagnetic"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "O2 has 16 electrons. Superoxide ion O₂⁻ has 17 electrons. The MO configuration is: KK σ2s² σ*2s² σ2pz² π2px² = π2py² π*2px² = π*2py¹. The number of bonding electrons N_b = 10, and antibonding N_a = 7. Bond Order = 1/2 * (N_b - N_a) = 1/2 * (10 - 7) = 1.5. Due to the presence of 1 unpaired electron in the π* antibonding orbital, O₂⁻ is paramagnetic.",
+          "topic": "Molecular Orbital Theory",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "id": "quiz-electrostatics",
+      "title": "Electric Potential and Capacitance (Class 12 Adv)",
+      "description": "Advanced numerical questions on Gaussian surface fluxes, concentric spherical conductors, and dielectric boundary conditions.",
+      "subject": "Physics",
+      "classLevel": 12,
+      "durationMinutes": 20,
+      "createdBy": "teacher-sharma@abhiyantra.com",
+      "createdAt": "2026-06-13T18:10:18.914Z",
+      "isCustom": false,
+      "questions": [
+        {
+          "id": "q-elec-1",
+          "text": "A spherical conductor of radius R₁ is surrounded by a concentric uncharged thick conducting shell of internal radius R₂ and outer radius R₃. If a charge +Q is placed on the inner sphere, what is the potential of the inner conductor?",
+          "options": [
+            "V = Q / (4πε₀R₁)",
+            "V = Q / (4πε₀) * [1/R₁ - 1/R₂ + 1/R₃]",
+            "V = Q / (4πε₀) * [1/R₁ + 1/R₃]",
+            "V = Q / (4πε₀) * [1/R₂ - 1/R₃]"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Due to electrostatic induction, a charge of -Q is induced on the inner surface (r = R₂) of the outer shell, and +Q is induced on its outer surface (r = R₃). The total potential V of the inner sphere is the sum of potentials due to: inner surface charge +Q (at r=R₁), induced interior charge -Q (at r=R₂), and induced outer charge +Q (at r=R₃). This gives V = V_inner + V_induced_in + V_induced_out = Q/(4πε₀R₁) - Q/(4πε₀R₂) + Q/(4πε₀R₃).",
+          "topic": "Electrostatic Potential and Capacitance",
+          "difficulty": "Hard"
+        },
+        {
+          "id": "q-elec-2",
+          "text": "A parallel plate capacitor is filled with two different slab dielectrics of thickness d/2 each and dielectric constants K₁ and K₂. If the capacitance without dielectric was C₀, what is the new capacitance?",
+          "options": [
+            "C = C₀ * (K₁ + K₂) / 2",
+            "C = C₀ * 2K₁K₂ / (K₁ + K₂)",
+            "C = C₀ * K₁K₂",
+            "C = C₀ * (K₁·K₂ + K₁ + K₂)"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "The system can be modeled as two capacitors in series, each of plate thickness d/2. C₁ = K₁ε₀A / (d/2) = 2K₁C₀ and C₂ = K₂ε₀A / (d/2) = 2K₂C₀. In series, 1/C_eq = 1/C₁ + 1/C₂ = d/(2K₁ε₀A) + d/(2K₂ε₀A) = d/(2ε₀A) * [ (K₁ + K₂) / K₁K₂ ]. Thus, C_eq = C₀ * 2K₁K₂ / (K₁ + K₂). This is the harmonic mean of dielectrics.",
+          "topic": "Electrostatic Potential and Capacitance",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-limits",
+      "title": "Limits & L'Hopital's Theorem (Class 12 Advanced)",
+      "description": "Challenging evaluation of indeterminate mathematical forms, Taylor series expansions, and sandwich theorem limits.",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "durationMinutes": 15,
+      "createdBy": "teacher-gupta@abhiyantra.com",
+      "createdAt": "2026-06-13T18:10:18.914Z",
+      "isCustom": false,
+      "questions": [
+        {
+          "id": "q-limits-1",
+          "text": "Evaluate the limit: L = lim (x -> 0) [ (e^x - e^(-x) - 2x) / (x - sin x) ]",
+          "options": [
+            "L = 0",
+            "L = 1",
+            "L = 2",
+            "L = 4"
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "This limit is of 0/0 indeterminate form. Applying Maclaurin series expansion: e^x = 1 + x + x²/2! + x³/3! + x⁴/4! + ... and e^(-x) = 1 - x + x²/2! - x³/3! + ... Then (e^x - e^(-x) - 2x) = 2(x³/3! + x⁵/5! + ...) = x³/3 + o(x³). The denominator is (x - sin x) = x - (x - x³/3! + ...) = x³/6 + o(x³). Therefore, L = lim (x -> 0) [ (x³/3) / (x³/6) ] = 6 / 3 = 2.",
+          "topic": "Limits and Continuity",
+          "difficulty": "Hard"
+        },
+        {
+          "id": "q-limits-2",
+          "text": "Find the limit as n tends to infinity: lim (n -> ∞) [ (1/n) * Σ (r=1 to n) (r / √(n² + r²)) ]",
+          "options": [
+            "L = √2 - 1",
+            "L = 1",
+            "L = √2 + 1",
+            "L = 2"
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "We convert the limit of a Riemann sum into a definite integral. The sum can be written as (1/n) * Σ_r=1^n [ (r/n) / √(1 + (r/n)²) ]. Let x = r/n, as n -> ∞, the sum becomes the integral from 0 to 1 of [ x / √(1 + x²) ] dx. Integrating: Let u = 1+x², du = 2xdx. The bounds change from x:[0,1] to u:[1,2]. The integral becomes 1/2 * ∫_1^2 u^(-1/2) du = [u^(1/2)]_1^2 = √2 - 1.",
+          "topic": "Limits and Continuity",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-phy12-electrostatics",
+      "title": "Electrostatics Unit Practice Test",
+      "description": "Automated dynamic challenge evaluation for the chapter \"Electrostatics\". Organized and structured according to CBSE Class 12 syllabus core standards.",
+      "subject": "Physics",
+      "classLevel": 12,
+      "durationMinutes": 16,
+      "questions": [
+        {
+          "id": "q-dyn-phy12-electrostatics-0",
+          "text": "Evaluate the primary, advanced syllabus formulations revolving around the core topic \"Coulomb's Law\". How does modifying standard boundary parameters affects the physical limits or mathematical outputs?",
+          "options": [
+            "The system displays a proportional linear increase corresponding directly to the scaling input factor.",
+            "The value decays quadratically over spatial dimensions in compliance with standard inverse square parameters.",
+            "The state vectors remain stable as variables undergo symmetrical balanced adjustments.",
+            "The system approaches a singular critical threshold as standard variables scale to extreme boundaries."
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "Pursuant to IIT-JEE and NEET prep standards for Class 12 Physics in Coulomb's Law, calculations show that adjusting standard values results in predictable balance thresholds. Check classic chapters formulae for confirmation.",
+          "topic": "Coulomb's Law",
+          "difficulty": "Hard"
+        },
+        {
+          "id": "q-dyn-phy12-electrostatics-1",
+          "text": "Evaluate the primary, advanced syllabus formulations revolving around the core topic \"Electric Field & Gauss Law\". How does modifying standard boundary parameters affects the physical limits or mathematical outputs?",
+          "options": [
+            "The system displays a proportional linear increase corresponding directly to the scaling input factor.",
+            "The value decays quadratically over spatial dimensions in compliance with standard inverse square parameters.",
+            "The state vectors remain stable as variables undergo symmetrical balanced adjustments.",
+            "The system approaches a singular critical threshold as standard variables scale to extreme boundaries."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Pursuant to IIT-JEE and NEET prep standards for Class 12 Physics in Electric Field & Gauss Law, calculations show that adjusting standard values results in predictable balance thresholds. Check classic chapters formulae for confirmation.",
+          "topic": "Electric Field & Gauss Law",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q-dyn-phy12-electrostatics-2",
+          "text": "Evaluate the primary, advanced syllabus formulations revolving around the core topic \"Electrostatic Potential\". How does modifying standard boundary parameters affects the physical limits or mathematical outputs?",
+          "options": [
+            "The system displays a proportional linear increase corresponding directly to the scaling input factor.",
+            "The value decays quadratically over spatial dimensions in compliance with standard inverse square parameters.",
+            "The state vectors remain stable as variables undergo symmetrical balanced adjustments.",
+            "The system approaches a singular critical threshold as standard variables scale to extreme boundaries."
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "Pursuant to IIT-JEE and NEET prep standards for Class 12 Physics in Electrostatic Potential, calculations show that adjusting standard values results in predictable balance thresholds. Check classic chapters formulae for confirmation.",
+          "topic": "Electrostatic Potential",
+          "difficulty": "Easy"
+        },
+        {
+          "id": "q-dyn-phy12-electrostatics-3",
+          "text": "Evaluate the primary, advanced syllabus formulations revolving around the core topic \"Capacitors & Dielectrics\". How does modifying standard boundary parameters affects the physical limits or mathematical outputs?",
+          "options": [
+            "The system displays a proportional linear increase corresponding directly to the scaling input factor.",
+            "The value decays quadratically over spatial dimensions in compliance with standard inverse square parameters.",
+            "The state vectors remain stable as variables undergo symmetrical balanced adjustments.",
+            "The system approaches a singular critical threshold as standard variables scale to extreme boundaries."
+          ],
+          "correctAnswerIndex": 3,
+          "explanation": "Pursuant to IIT-JEE and NEET prep standards for Class 12 Physics in Capacitors & Dielectrics, calculations show that adjusting standard values results in predictable balance thresholds. Check classic chapters formulae for confirmation.",
+          "topic": "Capacitors & Dielectrics",
+          "difficulty": "Hard"
+        }
+      ],
+      "createdBy": "system@abhiyantra.com",
+      "createdAt": "2026-06-13T18:31:12.942Z",
+      "isCustom": true
+    }
+  ],
+  "timelines": [
+    {
+      "id": "timeline-phy11-units-dimensions",
+      "title": "Units, Dimensions & Measurements",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "SI Units",
+        "Dimensional Analysis",
+        "Least Count & Errors",
+        "Vernier Calliper & Screw Gauge"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-units-dimensions"
+    },
+    {
+      "id": "timeline-phy11-kinematics",
+      "title": "Kinematics",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Motion in a Straight Line",
+        "Projectile Motion",
+        "Relative Velocity",
+        "Uniform Circular Motion"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "test_ready",
+      "testId": "quiz-phy11-kinematics"
+    },
+    {
+      "id": "timeline-phy11-laws-motion",
+      "title": "Newton's Laws of Motion & Friction",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Inertia & Newton's Laws",
+        "Friction & Coefficients",
+        "Circular Motion Dynamics",
+        "Constraint Relations",
+        "Atwood Machines"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 5 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "test_ready",
+      "testId": "quiz-nlms"
+    },
+    {
+      "id": "timeline-phy11-work-energy",
+      "title": "Work, Energy & Power",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Work Done by Forces",
+        "Kinetic & Potential Energy",
+        "Conservation of Energy",
+        "Power & Collisions"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-work-energy"
+    },
+    {
+      "id": "timeline-phy11-rotational-motion",
+      "title": "System of Particles & Rotational Motion",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Center of Mass",
+        "Moment of Inertia",
+        "Torque & Angular Momentum",
+        "Rolling Motion"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-rotational-motion"
+    },
+    {
+      "id": "timeline-phy11-gravitation",
+      "title": "Gravitation",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Newton's Law of Gravitation",
+        "Acceleration due to Gravity",
+        "Orbital Velocity",
+        "Escape Velocity",
+        "Kepler's Laws"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 5 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-gravitation"
+    },
+    {
+      "id": "timeline-phy11-solids-fluids",
+      "title": "Properties of Solids & Fluids",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Elasticity & Hooke's Law",
+        "Viscosity & Terminal Velocity",
+        "Surface Tension",
+        "Bernoulli's Theorem",
+        "Pascal's Law"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 5 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-solids-fluids"
+    },
+    {
+      "id": "timeline-phy11-thermodynamics",
+      "title": "Thermodynamics & Kinetic Theory",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Thermal Expansion & Calorimetry",
+        "Laws of Thermodynamics",
+        "Carnot Cycle & Efficiency",
+        "Ideal Gas Equation & Kinetic Theory"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-thermodynamics"
+    },
+    {
+      "id": "timeline-phy11-oscillations-waves",
+      "title": "Oscillations & Waves",
+      "subject": "Physics",
+      "classLevel": 11,
+      "topics": [
+        "Simple Harmonic Motion",
+        "Superposition of Waves",
+        "Doppler Effect",
+        "Resonance & Standing Waves"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy11-oscillations-waves"
+    },
+    {
+      "id": "timeline-phy12-electrostatics",
+      "title": "Electrostatics",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Coulomb's Law",
+        "Electric Field & Gauss Law",
+        "Electrostatic Potential",
+        "Capacitors & Dielectrics"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-electrostatics"
+    },
+    {
+      "id": "timeline-phy12-current-elec",
+      "title": "Current Electricity",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Ohm's Law & Drift Velocity",
+        "Kirchhoff's Rules",
+        "Wheatstone Bridge & Potentiometer",
+        "Heating Effects of Current"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-current-elec"
+    },
+    {
+      "id": "timeline-phy12-magnetism",
+      "title": "Magnetic Effects & Magnetism",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Biot-Savart & Ampere's Law",
+        "Lorentz Force on Charged Particles",
+        "Torque on Current Loop",
+        "Bar Magnet & Earth Magnetism"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-magnetism"
+    },
+    {
+      "id": "timeline-phy12-emi-ac",
+      "title": "Electromagnetic Induction & AC",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Faraday's & Lenz's Laws",
+        "Self & Mutual Inductance",
+        "LCR AC Circuits",
+        "Transformers & Generators"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-emi-ac"
+    },
+    {
+      "id": "timeline-phy12-em-waves",
+      "title": "Electromagnetic Waves",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Displacement Current",
+        "Maxwell's Equations",
+        "Electromagnetic Spectrum"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-em-waves"
+    },
+    {
+      "id": "timeline-phy12-optics",
+      "title": "Optics (Ray & Wave)",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Reflection & Refraction",
+        "Lenses & Optical Instruments",
+        "Interference & Young's Double Slit",
+        "Diffraction & Polarization"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-optics"
+    },
+    {
+      "id": "timeline-phy12-dual-nature",
+      "title": "Dual Nature, Atoms & Nuclei",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Photoelectric Effect",
+        "De Broglie Waves",
+        "Bohr's Model of Hydrogen",
+        "Radioactivity & Nuclear Fission/Fusion"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-dual-nature"
+    },
+    {
+      "id": "timeline-phy12-semiconductors",
+      "title": "Semiconductor Electronics",
+      "subject": "Physics",
+      "classLevel": 12,
+      "topics": [
+        "Energy Bands in Solids",
+        "p-n Junction Diode",
+        "Zener Diode & Rectifiers",
+        "Logic Gates"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Physics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-phy12-semiconductors"
+    },
+    {
+      "id": "timeline-chem11-basic-concepts",
+      "title": "Some Basic Concepts of Chemistry",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Mole Concept",
+        "Empirical & Molecular Formula",
+        "Limiting Reagent & Stoichiometry",
+        "Concentration Terms"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-basic-concepts"
+    },
+    {
+      "id": "timeline-chem11-atom-structure",
+      "title": "Structure of Atom",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Bohr's Model",
+        "Quantum Numbers",
+        "Aufbau & Hund's Rules",
+        "Dual Nature & Heisenberg"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-atom-structure"
+    },
+    {
+      "id": "timeline-chem11-periodicity",
+      "title": "Classification & Periodicity",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Periodic Table History",
+        "Ionization Enthalpy",
+        "Electron Gain Enthalpy",
+        "Atomic & Ionic Radii"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-periodicity"
+    },
+    {
+      "id": "timeline-chem11-bonding",
+      "title": "Chemical Bonding & Hybridization",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "VSEPR Theory",
+        "Orbital Hybridization",
+        "Dipole Moments",
+        "Molecular Orbital Theory",
+        "Hydrogen Bonding"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 5 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chembond"
+    },
+    {
+      "id": "timeline-chem11-states-matter",
+      "title": "States of Matter & Gas Laws",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Boyle's, Charles's & Avogadro's Laws",
+        "Ideal Gas Equation",
+        "Real Gases & van der Waals"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-states-matter"
+    },
+    {
+      "id": "timeline-chem11-thermodynamics",
+      "title": "Chemical Thermodynamics",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "First Law of Thermodynamics",
+        "Enthalpy & Entropy Change",
+        "Gibbs Free Energy",
+        "Spontaneity Criteria"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chembond"
+    },
+    {
+      "id": "timeline-chem11-equilibrium",
+      "title": "Equilibrium (Chemical & Ionic)",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Le Chatelier's Principle",
+        "pH & Buffer Solutions",
+        "Solubility Product (Ksp)",
+        "Salt Hydrolysis"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-equilibrium"
+    },
+    {
+      "id": "timeline-chem11-redox-hydrogen",
+      "title": "Redox Reactions & Hydrogen",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Oxidation Numbers",
+        "Balancing Redox Equations",
+        "Hydrogen Properties",
+        "Water Hardness"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-redox-hydrogen"
+    },
+    {
+      "id": "timeline-chem11-organic-basic",
+      "title": "Organic Chemistry: Some Basic Principles",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "IUPAC Nomenclature",
+        "Isomerism (Structural & Stereo)",
+        "Inductive, Electromeric & Resonance Effects",
+        "Hyperconjugation"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-organic-basic"
+    },
+    {
+      "id": "timeline-chem11-hydrocarbons",
+      "title": "Hydrocarbons",
+      "subject": "Chemistry",
+      "classLevel": 11,
+      "topics": [
+        "Alkanes Chemistry",
+        "Alkenes & Markownikoff Rule",
+        "Alkynes Synthesis",
+        "Aromatic Hydrocarbons"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem11-hydrocarbons"
+    },
+    {
+      "id": "timeline-chem12-solid-state",
+      "title": "Solid State",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Amorphous & Crystalline Solids",
+        "Unit Cells & Packing Efficiency",
+        "Crystal Defects",
+        "Electrical & Magnetic Properties"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-solid-state"
+    },
+    {
+      "id": "timeline-chem12-solutions",
+      "title": "Solutions",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Raoult's Law",
+        "Colligative Properties",
+        "Vant Hoff Factor",
+        "Ideal & Non-ideal Solutions"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-solutions"
+    },
+    {
+      "id": "timeline-chem12-electrochem",
+      "title": "Electrochemistry",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Nernst Equation",
+        "Conductance of Electrolytic Solutions",
+        "Kohlrausch Law",
+        "Electrolysis & Batteries"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-electrochem"
+    },
+    {
+      "id": "timeline-chem12-kinetics",
+      "title": "Chemical Kinetics",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Rate Laws & Order of Reaction",
+        "Integrated Rate Equations",
+        "Arrhenius Equation",
+        "Collision Theory"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chembond"
+    },
+    {
+      "id": "timeline-chem12-surface",
+      "title": "Surface Chemistry",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Adsorption & Absorption",
+        "Catalysis Principles",
+        "Colloids & Emulsions"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-surface"
+    },
+    {
+      "id": "timeline-chem12-coordination",
+      "title": "Coordination Compounds",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Werner's Theory",
+        "Valence Bond Theory (VBT)",
+        "Crystal Field Theory (CFT)",
+        "Isomerism in Coordination"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-coordination"
+    },
+    {
+      "id": "timeline-chem12-haloalkanes",
+      "title": "Haloalkanes & Haloarenes",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Nomenclature & Preparation",
+        "Nucleophilic Substitution (SN1/SN2)",
+        "Electrophilic Substitution of Haloarenes"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-haloalkanes"
+    },
+    {
+      "id": "timeline-chem12-oxygen-cmpds",
+      "title": "Alcohols, Phenols & Ethers",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Acidity of Phenols",
+        "Lucas Test & Reimer-Tiemann",
+        "Williamsons Ether Synthesis"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-oxygen-cmpds"
+    },
+    {
+      "id": "timeline-chem12-carbonyl",
+      "title": "Aldehydes, Ketones & Carboxylic Acids",
+      "subject": "Chemistry",
+      "classLevel": 12,
+      "topics": [
+        "Nucleophilic Addition Reactions",
+        "Aldol & Cannizzaro Reactions",
+        "Acidic Nature of Carboxylic Acids"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Chemistry Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-chem12-carbonyl"
+    },
+    {
+      "id": "timeline-math11-sets-relations",
+      "title": "Sets, Relations & Functions",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Set Operations",
+        "Venn Diagrams",
+        "Cartesian Product",
+        "Domain & Range of Functions"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-sets-relations"
+    },
+    {
+      "id": "timeline-math11-trig",
+      "title": "Trigonometric Functions",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Trigonometric Identities",
+        "Multiple & Sub-multiple Angle Formulas",
+        "Trigonometric Equations"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-trig"
+    },
+    {
+      "id": "timeline-math11-complex-quadratic",
+      "title": "Complex Numbers & Quadratic Equations",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Algebra of Complex Numbers",
+        "Modulus & Argand Plane",
+        "Roots of Quadratic Equations",
+        "Location of Roots"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-complex-quadratic"
+    },
+    {
+      "id": "timeline-math11-permutations",
+      "title": "Permutations & Combinations",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Fundamental Principle of Counting",
+        "Permutations (nPr)",
+        "Combinations (nCr)",
+        "Circular Permutations"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-permutations"
+    },
+    {
+      "id": "timeline-math11-binomial",
+      "title": "Binomial Theorem",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Expansion & General Term",
+        "Middle Term & Coefficients",
+        "Binomial Coefficients properties"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-binomial"
+    },
+    {
+      "id": "timeline-math11-sequences",
+      "title": "Sequences & Series",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Arithmetic Progression (AP)",
+        "Geometric Progression (GP)",
+        "Arithmetic-Geometric Progression (AGP)",
+        "Special Series (Σn, Σn², Σn³)"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-sequences"
+    },
+    {
+      "id": "timeline-math11-co-coordinate",
+      "title": "Straight Lines & Conic Sections",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Straight Line Forms & Slopes",
+        "Circle Mechanics",
+        "Parabola Properties",
+        "Ellipse & Hyperbola Standards"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math11-co-coordinate"
+    },
+    {
+      "id": "timeline-math11-limits-derivatives",
+      "title": "Limits & Derivatives",
+      "subject": "Mathematics",
+      "classLevel": 11,
+      "topics": [
+        "Standard Limits Evaluation",
+        "Squeeze Theorem",
+        "First Principles of Differentiation"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 11, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-limits"
+    },
+    {
+      "id": "timeline-math12-relations-itf",
+      "title": "Relations, Functions & Inverse Trig",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Equivalence Relations",
+        "One-One & Onto Functions",
+        "ITF Principal Values",
+        "ITF Properties & Conversion"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-relations-itf"
+    },
+    {
+      "id": "timeline-math12-matrices",
+      "title": "Matrices & Determinants",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Matrix Algebra & Transpose",
+        "Symmetric & Skew Symmetric",
+        "Properties of Determinants",
+        "Cramer's Rule & Inverse"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-matrices"
+    },
+    {
+      "id": "timeline-math12-differentiability",
+      "title": "Continuity & Differentiability",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Continuity Testing",
+        "Differentiability Verification",
+        "Chain Rule & Logarithmic Differentiation",
+        "Implicit & Parametric Forms"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-differentiability"
+    },
+    {
+      "id": "timeline-math12-aod",
+      "title": "Applications of Derivatives (AOD)",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Tandent & Normal",
+        "Monotonicity & Rolle's Theorem",
+        "Mean Value Theorem",
+        "Maxima & Minima"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-aod"
+    },
+    {
+      "id": "timeline-math12-integrals",
+      "title": "Integrals (Indefinite & Definite)",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Methods of Integration",
+        "Integration by Parts & Partial Fractions",
+        "Definite Integrals properties",
+        "Definite Integral as Limit of Sum"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-integrals"
+    },
+    {
+      "id": "timeline-math12-aoi",
+      "title": "Applications of Integrals (Area)",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Area bounded by Curves",
+        "Area under special parabolas and straight lines"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 2 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-aoi"
+    },
+    {
+      "id": "timeline-math12-diff-eq",
+      "title": "Differential Equations",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Order & Degree",
+        "Variable Separable Method",
+        "Homogeneous Equations",
+        "Linear Differential Equations"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 4 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-diff-eq"
+    },
+    {
+      "id": "timeline-math12-vectors-3d",
+      "title": "Vector Algebra & 3D Geometry",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Dot & Cross Products",
+        "Scalar Triple Product",
+        "Equations of Lines in 3D",
+        "Equations of Planes",
+        "Shortest Distance"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 5 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-vectors-3d"
+    },
+    {
+      "id": "timeline-math12-probability",
+      "title": "Probability & Distributions",
+      "subject": "Mathematics",
+      "classLevel": 12,
+      "topics": [
+        "Conditional Probability & Bayes Theorem",
+        "Independent Events",
+        "Binomial Distribution"
+      ],
+      "description": "Target JEE & NEET curriculum prep tracker for Mathematics Class 12, covering 3 key areas. Start study loop to trigger exam counts.",
+      "durationHours": 24,
+      "status": "not_started",
+      "testId": "quiz-math12-probability"
+    }
+  ],
+  "attempts": [],
+  "notifications": [
+    {
+      "id": "ff-timeline-phy11-laws-motion-1781394590955",
+      "title": "⚡ Fast-Forward Exam Alert!",
+      "message": "Simulated study duration elapsed. Dynamic Test series is now ready to attempt.",
+      "type": "test_ready",
+      "timestamp": "2026-06-13T23:49:50.955Z",
+      "read": true
+    },
+    {
+      "id": "timestart-timeline-phy11-laws-motion",
+      "title": "📖 Chapter Study Started!",
+      "message": "You started the countdown for \"Newton's Laws of Motion & Friction\". Recommended preparation time: 24 hrs. Test unlocks soon!",
+      "type": "timer_alert",
+      "timestamp": "2026-06-13T23:49:49.553Z",
+      "read": true
+    },
+    {
+      "id": "test-ready-timeline-phy11-kinematics-1781394249555",
+      "title": "🔥 Chapter Test Unlocked!",
+      "message": "Your exam schedule for \"Kinematics\" is complete. The Abhiyantra Test Series is active. Open the Chapter timeline to take your test.",
+      "type": "test_ready",
+      "timestamp": "2026-06-13T23:44:09.555Z",
+      "read": true,
+      "chapterId": "timeline-phy11-kinematics"
+    },
+    {
+      "id": "timestart-timeline-phy11-kinematics",
+      "title": "📖 Chapter Study Started!",
+      "message": "You started the countdown for \"Kinematics\". Recommended preparation time: 24 hrs. Test unlocks soon!",
+      "type": "timer_alert",
+      "timestamp": "2026-06-13T23:43:39.140Z",
+      "read": true
+    }
+  ],
+  "leaderboard": [],
+  "lectures": []
+}
