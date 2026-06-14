@@ -212,7 +212,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   placeholder="Enter your username"
                   value={loginUsername}
                   onChange={(e) => setLoginUsername(e.target.value)}
-                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
+                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   placeholder="Enter your password"
                   value={loginPassword}
                   onChange={(e) => setLoginPassword(e.target.value)}
-                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
                 />
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   value={regName}
                   onChange={(e) => setRegName(e.target.value)}
                   autoComplete="off"
-                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
+                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   value={regUsername}
                   onChange={(e) => setRegUsername(e.target.value)}
                   autoComplete="off"
-                  className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
+                  className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
               <div className="space-y-1">
@@ -275,7 +275,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   value={regPassword}
                   onChange={(e) => setRegPassword(e.target.value)}
                   autoComplete="new-password"
-                  className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+                  className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
                 />
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                   value={regEmail}
                   onChange={(e) => setRegEmail(e.target.value)}
                   autoComplete="off"
-                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
+                  className="w-full bg-slate-50/50 pl-11 pr-4 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-semibold"
                 />
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <select
                   value={regClass}
                   onChange={(e) => setRegClass(Number(e.target.value) as 11 | 12)}
-                  className="w-full bg-slate-50 px-3 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-bold text-slate-700"
+                  className="w-full bg-slate-50 px-3 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-bold text-slate-700"
                 >
                   <option value={11}>Class 11</option>
                   <option value={12}>Class 12</option>
@@ -313,7 +313,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <select
                   value={regRole}
                   onChange={(e) => setRegRole(e.target.value as 'student' | 'teacher')}
-                  className="w-full bg-slate-50 px-3 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-bold text-slate-700"
+                  className="w-full bg-slate-50 px-3 py-2.5 border border-slate-200 rounded-xl text-base md:text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all font-bold text-slate-700"
                 >
                   <option value="student">Student</option>
                   <option value="teacher">Teacher / Faculty</option>

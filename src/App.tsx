@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { UserProfile, Quiz } from './types';
-import { getStoredUser, setStoredUser, getStoredQuizzes, getStoredAttempts } from './lib/dbStore';
+import { getStoredUser, setStoredUser, getStoredQuizzes, getStoredAttempts, getQuizOrCreateDynamic } from './lib/dbStore';
 import Header from './components/Header';
 import TimelineInteractive from './components/TimelineInteractive';
 import AnalyticsPanel from './components/AnalyticsPanel';
@@ -101,7 +101,7 @@ export default function App() {
     }
   };
 
-  const currentQuiz = activeQuizId ? getStoredQuizzes().find(q => q.id === activeQuizId) : null;
+  const currentQuiz = activeQuizId ? getQuizOrCreateDynamic(activeQuizId) : null;
 
   // Unauthorised session Gate
   if (!user) {

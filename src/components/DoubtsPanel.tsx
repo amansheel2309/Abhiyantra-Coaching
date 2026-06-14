@@ -257,7 +257,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                     <select
                       value={subject}
                       onChange={(e) => setSubject(e.target.value as Subject)}
-                      className="w-full bg-slate-50 border border-slate-200 px-3.5 py-3 rounded-xl font-bold cursor-pointer text-slate-700 text-xs focus:outline-none focus:border-indigo-500"
+                      className="w-full bg-slate-50 border border-slate-200 px-3.5 py-3 rounded-xl font-bold cursor-pointer text-slate-700 text-base md:text-xs focus:outline-none focus:border-indigo-500"
                     >
                       <option value="Physics">⚛️ Physics</option>
                       <option value="Chemistry">🧪 Chemistry</option>
@@ -273,7 +273,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                       value={chapterId}
                       onChange={(e) => setChapterId(e.target.value)}
                       disabled={availableChapters.length === 0}
-                      className="w-full bg-slate-50 border border-slate-200 px-3.5 py-3 rounded-xl font-semibold cursor-pointer text-slate-700 text-xs focus:outline-none focus:border-indigo-500 disabled:opacity-60"
+                      className="w-full bg-slate-50 border border-slate-200 px-3.5 py-3 rounded-xl font-semibold cursor-pointer text-slate-700 text-base md:text-xs focus:outline-none focus:border-indigo-500 disabled:opacity-60"
                     >
                       {availableChapters.length === 0 ? (
                         <option value="">No chapters active for Class {user.classLevel}</option>
@@ -295,7 +295,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                     placeholder="Type the full question text or describe the conceptual confusion. Be specific so teachers can explain step-by-step..."
                     value={questionText}
                     onChange={(e) => setQuestionText(e.target.value)}
-                    className="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-indigo-500 text-slate-700 text-xs placeholder:text-slate-400"
+                    className="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-indigo-500 text-slate-700 text-base md:text-xs placeholder:text-slate-400"
                   />
                 </div>
 
@@ -395,7 +395,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                   placeholder="Search doubts or chapters..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 pl-11 pr-4 py-2.5 rounded-xl text-xs font-semibold focus:outline-none focus:border-indigo-500"
+                  className="w-full bg-slate-50 border border-slate-200 pl-11 pr-4 py-2.5 rounded-xl text-base md:text-xs font-semibold focus:outline-none focus:border-indigo-500"
                 />
               </div>
 
@@ -408,7 +408,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                   <select
                     value={activeFilterSubject}
                     onChange={(e) => setActiveFilterSubject(e.target.value as Subject | 'All')}
-                    className="bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl font-bold cursor-pointer text-slate-600 text-[11px] focus:outline-none"
+                    className="bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl font-bold cursor-pointer text-slate-600 text-base md:text-[11px] focus:outline-none"
                   >
                     <option value="All">All Subjects</option>
                     <option value="Physics">Physics</option>
@@ -424,7 +424,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                   <select
                     value={activeFilterStatus}
                     onChange={(e) => setActiveFilterStatus(e.target.value as 'All' | 'pending' | 'resolved')}
-                    className="bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl font-bold cursor-pointer text-slate-600 text-[11px] focus:outline-none"
+                    className="bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl font-bold cursor-pointer text-slate-600 text-base md:text-[11px] focus:outline-none"
                   >
                     <option value="All">All Statuses</option>
                     <option value="pending">⏳ Pending Resolver</option>
@@ -556,7 +556,7 @@ export default function DoubtsPanel({ user }: DoubtsPanelProps) {
                               placeholder="Write a clear, detailed, step-by-step mathematical proof or explanation to solve this doubt..."
                               value={replyTexts[doubt.id] || ''}
                               onChange={(e) => setReplyTexts(prev => ({ ...prev, [doubt.id]: e.target.value }))}
-                              className="w-full bg-white border border-slate-200 p-3.5 rounded-xl font-medium focus:outline-none focus:border-indigo-500 text-slate-700 text-xs placeholder:text-slate-400"
+                              className="w-full bg-white border border-slate-200 p-3.5 rounded-xl font-medium focus:outline-none focus:border-indigo-500 text-slate-700 text-base md:text-xs placeholder:text-slate-400"
                             />
                             <button
                               type="button"

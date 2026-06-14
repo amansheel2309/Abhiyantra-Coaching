@@ -291,7 +291,7 @@ export default function Header({ user, onChangeUser, currentTab, onChangeTab, on
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute right-0 mt-3.5 w-80 bg-white border border-slate-200 rounded-[1.75rem] shadow-xl p-4 text-slate-800"
+                  className="absolute right-[-110px] sm:right-0 mt-3.5 w-[calc(100vw-2rem)] max-w-[320px] sm:w-80 bg-white border border-slate-200 rounded-[1.75rem] shadow-xl p-4 text-slate-800 z-50"
                 >
                   <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
                     <span className="font-extrabold text-xs tracking-tight text-slate-800 uppercase font-mono">Exam Alerts</span>
