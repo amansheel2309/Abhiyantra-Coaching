@@ -27,7 +27,8 @@ let dbCache: any = {
   attempts: [],
   notifications: [],
   leaderboard: [],
-  lectures: []
+  lectures: [],
+  doubts: []
 };
 
 // MongoDB Client Connection Setup

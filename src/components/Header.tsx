@@ -102,6 +102,13 @@ export default function Header({ user, onChangeUser, currentTab, onChangeTab, on
               </button>
               <button
                 type="button"
+                onClick={() => onChangeTab('doubts')}
+                className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'doubts' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
+              >
+                Ask Doubts
+              </button>
+              <button
+                type="button"
                 onClick={() => onChangeTab('schedule')}
                 className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'schedule' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
               >
@@ -149,6 +156,13 @@ export default function Header({ user, onChangeUser, currentTab, onChangeTab, on
               </button>
               <button
                 type="button"
+                onClick={() => onChangeTab('doubts')}
+                className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'doubts' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
+              >
+                Doubt Solver
+              </button>
+              <button
+                type="button"
                 onClick={() => onChangeTab('schedule')}
                 className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'schedule' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
               >
@@ -186,6 +200,13 @@ export default function Header({ user, onChangeUser, currentTab, onChangeTab, on
                 className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'lectures' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
               >
                 Video Lectures
+              </button>
+              <button
+                type="button"
+                onClick={() => onChangeTab('doubts')}
+                className={`px-4 py-1.5 text-xs font-bold rounded-xl transition-all whitespace-nowrap cursor-pointer ${currentTab === 'doubts' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/60' : 'text-slate-500 hover:text-slate-800'}`}
+              >
+                Doubt Solver
               </button>
               <button
                 type="button"

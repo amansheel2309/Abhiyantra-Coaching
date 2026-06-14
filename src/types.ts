@@ -117,3 +117,18 @@ export interface Lecture {
   createdAt: string;
 }
 
+export interface Doubt {
+  id: string;
+  studentId: string;
+  studentName: string;
+  subject: Subject;
+  chapterTitle?: string;
+  questionText: string;
+  imageUrl?: string; // Base64 data URL
+  status: 'pending' | 'resolved';
+  replyText?: string;
+  repliedBy?: string;
+  repliedAt?: string;
+  createdAt: string;
+}
+

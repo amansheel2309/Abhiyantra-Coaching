@@ -269,7 +269,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
                 <label className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Password</label>
                 <input
                   type="password"
-                  placeholder="student123"
+                  placeholder="••••••••"
                   value={regPassword}
                   onChange={(e) => setRegPassword(e.target.value)}
                   className="w-full bg-slate-50/50 px-4 py-2.5 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
@@ -327,7 +327,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
         )}
 
         {/* Preseeded Evaluator Help Deck (Hidden for students, tap logo 5 times to reveal) */}
-        {logoClicks >= 5 && (
+        {process.env.NODE_ENV !== 'production' && logoClicks >= 5 && (
           <div className="pt-3 border-t border-slate-100 animate-fade-in">
             <div className="bg-indigo-50/40 p-4 rounded-out-[1.5rem] rounded-2xl border border-indigo-100/50 space-y-2">
               <h4 className="text-[10px] font-black uppercase tracking-wider text-indigo-700 flex items-center gap-1">

@@ -11,6 +11,7 @@ import ActiveTestArena from './components/ActiveTestArena';
 import TestScheduleCalendar from './components/TestScheduleCalendar';
 import AuthScreen from './components/AuthScreen';
 import LecturesPanel from './components/LecturesPanel';
+import DoubtsPanel from './components/DoubtsPanel';
 import { Sparkles, Trophy, BookOpen, GraduationCap, ArrowRight, ShieldCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -194,6 +195,17 @@ export default function App() {
                   exit={{ opacity: 0, y: -15 }}
                 >
                   <LecturesPanel user={user} onEnterTest={handleEnterTest} />
+                </motion.div>
+              )}
+
+              {currentTab === 'doubts' && (
+                <motion.div
+                  key="doubts"
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
+                >
+                  <DoubtsPanel user={user} />
                 </motion.div>
               )}
 

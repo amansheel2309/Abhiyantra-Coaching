@@ -1,4 +1,4 @@
-import { Quiz, ChapterTimeline, QuizAttempt, AppNotification, LeaderboardEntry, UserProfile, Question, Lecture } from '../types';
+import { Quiz, ChapterTimeline, QuizAttempt, AppNotification, LeaderboardEntry, UserProfile, Question, Lecture, Doubt } from '../types';
 import { PRESEEDED_QUIZZES, PRESEEDED_TIMELINES, INITIAL_LEADERBOARD_ENTRIES, PRESEEDED_LECTURES } from './preseededData';
 import { SYLLABUS_DATA } from './syllabus';
 
@@ -12,6 +12,7 @@ const KEY_NOTIFICATIONS = 'abhiyantra_notifications';
 const KEY_LEADERBOARD = 'abhiyantra_leaderboard';
 const KEY_LECTURES = 'abhiyantra_lectures';
 const KEY_COMPLETED_LECTURES = 'abhiyantra_completed_lectures';
+const KEY_DOUBTS = 'abhiyantra_doubts';
 
 // Helper to push updates to backend server
 const saveToServer = async (key: string, data: any) => {
@@ -62,6 +63,10 @@ export const syncWithServer = async () => {
         localStorage.setItem(KEY_LECTURES, JSON.stringify(data.lectures));
         changed = true;
       }
+      if (data.doubts) {
+        localStorage.setItem(KEY_DOUBTS, JSON.stringify(data.doubts));
+        changed = true;
+      }
 
       if (changed) {
         window.dispatchEvent(new Event('db-users-updated'));
@@ -71,6 +76,7 @@ export const syncWithServer = async () => {
         window.dispatchEvent(new Event('db-notifications-updated'));
         window.dispatchEvent(new Event('db-leaderboard-updated'));
         window.dispatchEvent(new Event('db-lectures-updated'));
+        window.dispatchEvent(new Event('db-doubts-updated'));
         window.dispatchEvent(new Event('auth-status-change'));
       }
     }
@@ -497,6 +503,7 @@ export const resetAllState = async () => {
   localStorage.removeItem(KEY_NOTIFICATIONS);
   localStorage.removeItem(KEY_LEADERBOARD);
   localStorage.removeItem(KEY_LECTURES);
+  localStorage.removeItem(KEY_DOUBTS);
   
   // Clear completed lecture logs
   const users = ['usr-admin', 'usr-teacher-sharma', 'usr-5', 'usr-1', 'usr-2', 'usr-3', 'usr-4'];
@@ -516,6 +523,7 @@ export const resetAllState = async () => {
   getStoredNotifications();
   getStoredLeaderboard();
   getStoredLectures();
+  getStoredDoubts();
   
   window.dispatchEvent(new Event('auth-status-change'));
   window.dispatchEvent(new Event('db-users-updated'));
@@ -526,6 +534,7 @@ export const resetAllState = async () => {
   window.dispatchEvent(new Event('db-leaderboard-updated'));
   window.dispatchEvent(new Event('db-lectures-updated'));
   window.dispatchEvent(new Event('db-completed-lectures-updated'));
+  window.dispatchEvent(new Event('db-doubts-updated'));
 };
 
 // Lectures management CRUD
@@ -573,4 +582,40 @@ export const toggleLectureCompletion = (studentId: string, lectureId: string): s
   localStorage.setItem(`${KEY_COMPLETED_LECTURES}_${studentId}`, JSON.stringify(completed));
   window.dispatchEvent(new Event('db-completed-lectures-updated'));
   return completed;
+};
+
+// Doubts management CRUD
+export const getStoredDoubts = (): Doubt[] => {
+  const data = localStorage.getItem(KEY_DOUBTS);
+  return data ? JSON.parse(data) : [];
+};
+
+export const saveDoubt = (doubt: Doubt) => {
+  const doubts = getStoredDoubts();
+  const index = doubts.findIndex(d => d.id === doubt.id);
+  if (index >= 0) {
+    doubts[index] = { ...doubt };
+  } else {
+    doubts.push(doubt);
+  }
+  localStorage.setItem(KEY_DOUBTS, JSON.stringify(doubts));
+  saveToServer('doubts', doubts);
+  window.dispatchEvent(new Event('db-doubts-updated'));
+};
+
+export const resolveDoubt = (id: string, replyText: string, repliedBy: string) => {
+  const doubts = getStoredDoubts();
+  const index = doubts.findIndex(d => d.id === id);
+  if (index >= 0) {
+    doubts[index] = {
+      ...doubts[index],
+      status: 'resolved',
+      replyText,
+      repliedBy,
+      repliedAt: new Date().toISOString()
+    };
+    localStorage.setItem(KEY_DOUBTS, JSON.stringify(doubts));
+    saveToServer('doubts', doubts);
+    window.dispatchEvent(new Event('db-doubts-updated'));
+  }
 };
